@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة تعليمية يمنية - الدروس</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 8px 15px;
+            margin: 0 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        #slider {
+            height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .class-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none; /* إزالة التحديد الأزرق من الرابط */
+        }
+
+        .class-item:hover {
+            background-color: #e0f7e0;
+        }
+
+        .class-item img {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+
+        .class-item span {
+            font-size: 18px;
+            color: #333;
+        }
+
+        #search-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        #search-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        #search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #search-button:hover {
+            background-color: #45a049;
+        }
+
+        .no-results {
+            display: none; /* يتم إظهارها فقط إذا لم يتم العثور على شيء */
+            padding: 20px;
+            font-size: 18px;
+            color: #999;
+            text-align: center;
+        }
+
+        a:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>منصة تعليمية يمنية</h1>
+</header>
+
+<nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="lesson.html">الدروس</a>
+    <a href="test.html">الاختبارات</a>
+    <a href="contact.html">اتصل بنا</a>
+</nav>
+
+<div class="container">
+    <!-- قسم البحث -->
+    <div id="search-section">
+        <input type="text" id="search-input" placeholder="ابحث عن صفك">
+        <button id="search-button" onclick="searchLessons()">بحث</button>
+    </div>
+
+    <!-- قسم الصفوف -->
+    <div class="section">
+        <h2 class="section-title">ما هو صفك؟</h2>
+        <div id="slider">
+            <!-- إضافة جميع الفصول الدراسية -->
+            <a href="#" class="class-item">
+                <img src="class1.jpg" alt=" ">
+                <span>اول ابتدائي</span>
+            </a>
+            <a href="#" class="class-item">
+                <img src="class2.jpg" alt=" ">
+                <span>ثاني ابتدائي</span>
+            </a>
+            <a href="#" class="class-item">
+                <img src="class3.jpg" alt=" ">
+                <span>ثالث ابتدائي</span>
+            </a>
+            <a href="#" class="class-item">
+                <img src="class4.jpg" alt=" ">
+                <span>رابع</span>
+            </a>
+            <a href="#" class="class-item">
+                <img src="class5.jpg" alt=" ">
+                <span>خامس</span>
+            </a>
+            <a href="#" class="class-item">
+                <img src="class6.jpg" alt=" ">
+                <span>سادس</span>
+            </a>
+            <a href="#" class="class-item">
+                <img src="class7.jpg" alt=" ">
+                <span>سابع</span>
+            </a>
+            <a href="#" class="class-item">
+                <img src="class8.jpg" alt=" ">
+                <span>ثامن</span>
+            </a>
+            <a href="#" class="class-item">
+                <img src="class9.jpg" alt=" ">
+                <span>تاسع</span>
+            </a>
+            <a href="مواد_صف_10.html" class="class-item">
+                <img src="class10.jpg" alt=" ">
+                <span>اول ثانوي</span>
+            </a>
+            <a href="#" class="class-item">
+                <img src="class11.jpg" alt=" ">
+                <span>ثاني ثانوي</span>
+            </a>
+            <a href="#" class="class-item">
+                <img src="class12.jpg" alt=" ">
+                <span>ثالث ثانوي</span>
+            </a>
+            <!-- رسالة إذا لم يتم العثور على شيء -->
+            <div class="no-results">لم يتم العثور على شيء</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p></p>
+</footer>
+
+<script>
+    function searchLessons() {
+        const searchInput = document.getElementById("search-input").value.toLowerCase();
+        const classItems = document.querySelectorAll(".class-item");
+        const noResultsMessage = document.querySelector("#slider .no-results");
+        let found = false;
+
+        classItems.forEach(item => {
+            const title = item.querySelector("span").textContent.toLowerCase();
+            if (title.includes(searchInput)) {
+                item.style.display = "flex";
+                found = true;
+            } else {
+                item.style.display = "none";
+            }
+        });
+
+        // إظهار أو إخفاء رسالة "لم يتم العثور على شيء"
+        noResultsMessage.style.display = found ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>

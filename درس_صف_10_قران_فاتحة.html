@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درس سورة الفاتحة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 8px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 8px 15px;
+            margin: 0 8px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .lesson-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .lesson-description {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .lesson-media {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>منصة تعليمية يمنية</h1>
+</header>
+
+<!-- شريط التنقل -->
+<nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="lesson.html">الدروس</a>
+    <a href="test.html">الاختبارات</a>
+    <a href="contact.html">اتصل بنا</a>
+</nav>
+
+<div class="container">
+    <div class="lesson-title">
+        درس سورة الفاتحة
+    </div>
+    <div class="lesson-description">
+        <p>في هذا الدرس سنتعرف على سورة الفاتحة وهي أول سور القرآن الكريم. سنتناول معاني الآيات وكيفية قراءتها بطريقة صحيحة.</p>
+        <p>تمثل سورة الفاتحة أحد أهم أجزاء القرآن الكريم التي يجب على المسلم تعلمها عن ظهر قلب لأنها جزء من الصلاة اليومية.</p>
+    </div>
+
+    <!-- اختيار عرض الفيديو، الصورة أو ملف PDF -->
+    <div class="lesson-media">
+        <!-- فيديو -->
+        <div id="video">
+            <!-- رابط وهمي للفيديو من YouTube (أو أي رابط فيديو آخر) -->
+            <iframe src="https://www.youtube.com/embed/your-video-id" width="100%" height="450px" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- صورة -->
+        <div id="image" style="display:none;">
+            <!-- رابط وهمي للصورة -->
+            <img src="https://via.placeholder.com/800x400?text=شرح+سورة+الفاتحة" alt="شرح سورة الفاتحة" style="width: 100%; max-width: 800px; border-radius: 10px;">
+        </div>
+
+        <!-- ملف PDF -->
+        <div id="pdf" style="display:none;">
+            <!-- رابط وهمي لملف PDF -->
+            <embed src="https://www.example.com/your-file.pdf" width="100%" height="600px" type="application/pdf">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>جميع الحقوق محفوظة لمنصة التعليم اليمنية &copy; 2024</p>
+</footer>
+
+<script>
+    // تحديد المحتوى المطلوب عرضه (فيديو أو صورة أو PDF)
+    // لتغيير نوع المحتوى، فقط قم بتعليق أو تفعيل الجزء المناسب من الأكواد التالية:
+    
+    // لعرض الفيديو
+    document.getElementById('video').style.display = 'block';
+    document.getElementById('image').style.display = 'none';
+    document.getElementById('pdf').style.display = 'none';
+
+    // لعرض الصورة
+    // document.getElementById('video').style.display = 'none';
+    // document.getElementById('image').style.display = 'block';
+    // document.getElementById('pdf').style.display = 'none';
+
+    // لعرض ملف PDF
+    // document.getElementById('video').style.display = 'none';
+    // document.getElementById('image').style.display = 'none';
+    // document.getElementById('pdf').style.display = 'block';
+</script>
+
+</body>
+</html>
