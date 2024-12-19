@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة تعليمية يمنية - الدروس</title>
+    <title>منصة تعليمية يمنية - مواد سابع اعدادي</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -79,7 +79,7 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: background-color 0.3s;
-            text-decoration: none; /* إزالة التحديد الأزرق من الرابط */
+            text-decoration: none;
         }
 
         .class-item:hover {
@@ -127,7 +127,7 @@
         }
 
         .no-results {
-            display: none; /* يتم إظهارها فقط إذا لم يتم العثور على شيء */
+            display: none;
             padding: 20px;
             font-size: 18px;
             color: #999;
@@ -155,72 +155,57 @@
 <div class="container">
     <!-- قسم البحث -->
     <div id="search-section">
-        <input type="text" id="search-input" placeholder="ابحث عن صفك">
+        <input type="text" id="search-input" placeholder="ابحث عن مادة">
         <button id="search-button" onclick="searchLessons()">بحث</button>
     </div>
 
-    <!-- قسم الصفوف -->
+    <!-- قسم المواد -->
     <div class="section">
-        <h2 class="section-title">ما هو صفك؟</h2>
+        <h2 class="section-title">مواد الصف السابع اساسي</h2>
         <div id="slider">
-            <!-- إضافة جميع الفصول الدراسية -->
-            <a href="مواد_صف_1.html" class="class-item">
-                <img src="class1.jpg" alt=" ">
-                <span>اول ابتدائي</span>
+            <!-- إضافة جميع المواد الدراسية -->
+            <a href="دروس_القران7.html" class="class-item">
+                <img src="quran.jpg" alt=" ">
+                <span>القرآن الكريم</span>
             </a>
-            <a href="مواد_صف_2.html" class="class-item">
-                <img src="class2.jpg" alt=" ">
-                <span>ثاني ابتدائي</span>
+            <a href="دروس_تربية_اسلامية7.html" class="class-item">
+                <img src="islamic.jpg" alt=" ">
+                <span>التربية الإسلامية</span>
             </a>
-            <a href="مواد_صف_3.html" class="class-item">
-                <img src="class3.jpg" alt=" ">
-                <span>ثالث ابتدائي</span>
+            <a href="دروس_لغة_عربية7.html" class="class-item">
+                <img src="arabic.jpg" alt=" ">
+                <span>لغتي العربية</span>
             </a>
-            <a href="مواد_صف_4.html" class="class-item">
-                <img src="class4.jpg" alt=" ">
-                <span>رابع</span>
+            <a href="دروس_رياضيات7.html" class="class-item">
+                <img src="math.jpg" alt=" ">
+                <span>الرياضيات</span>
             </a>
-            <a href="مواد_صف_5.html" class="class-item">
-                <img src="class5.jpg" alt=" ">
-                <span>خامس</span>
+            <a href="دروس_علوم7.html" class="class-item">
+                <img src="physics.jpg" alt=" ">
+                <span>العلوم</span>
             </a>
-            <a href="مواد_صف_6.html" class="class-item">
-                <img src="class6.jpg" alt=" ">
-                <span>سادس</span>
+            <a href="دروس_تربية_وطنية7.html" class="class-item">
+                <img src="physics.jpg" alt=" ">
+                <span>التربية الوطنية</span>
             </a>
-            <a href="مواد_صف_7.html" class="class-item">
-                <img src="class7.jpg" alt=" ">
-                <span>سابع</span>
+            <a href="دروس_تاريخ7.html" class="class-item">
+                <img src="physics.jpg" alt=" ">
+                <span>التاريخ</span>
             </a>
-            <a href="مواد_صف_8.html" class="class-item">
-                <img src="class8.jpg" alt=" ">
-                <span>ثامن</span>
+            <a href="دروس_جغرافيا7.html" class="class-item">
+                <img src="physics.jpg" alt=" ">
+                <span>الجغرافيا</span>
             </a>
-            <a href="مواد_صف_9.html" class="class-item">
-                <img src="class9.jpg" alt=" ">
-                <span>تاسع</span>
             </a>
-            <a href="مواد_صف_10.html" class="class-item">
-                <img src="class10.jpg" alt=" ">
-                <span>اول ثانوي</span>
-            </a>
-            <a href="مواد_صف_11.html" class="class-item">
-                <img src="class11.jpg" alt=" ">
-                <span>ثاني ثانوي</span>
-            </a>
-            <a href="مواد_صف_12.html" class="class-item">
-                <img src="class12.jpg" alt=" ">
-                <span>ثالث ثانوي</span>
+            <a href="دروس_english7.html" class="class-item">
+                <img src="physics.jpg" alt=" ">
+                <span>اللغة الانجليزية</span>
             </a>
             <!-- رسالة إذا لم يتم العثور على شيء -->
             <div class="no-results">لم يتم العثور على شيء</div>
         </div>
     </div>
 </div>
-
-<footer>
-    <p></p>
-</footer>
 
 <script>
     function searchLessons() {
@@ -239,7 +224,6 @@
             }
         });
 
-        // إظهار أو إخفاء رسالة "لم يتم العثور على شيء"
         noResultsMessage.style.display = found ? "none" : "block";
     }
 </script>
